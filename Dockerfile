@@ -1,6 +1,6 @@
 FROM alpine:edge
 
-VOLUMES ["/var/run/dbus"]
+VOLUME ["/var/run/dbus"]
 
 RUN echo "http://dl-cdn.alpinelinux.org/alpine/edge/testing" >> /etc/apk/repositories \
  && apk update \
