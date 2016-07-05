@@ -4,7 +4,7 @@ VOLUME ["/var/run/dbus"]
 
 RUN echo "http://dl-cdn.alpinelinux.org/alpine/edge/testing" >> /etc/apk/repositories \
  && apk update \
- && apk add mono make dbus bash \
+ && apk add mono make dbus bash etcd \
  && wget http://mir7.ovh.net/ovh-applications/hubic/hubiC-Linux/2.1.0/hubiC-Linux-2.1.0.53-linux.tar.gz \
  && tar -xf hubiC-Linux-2.1.0.53-linux.tar.gz \
  && cd hubic \
